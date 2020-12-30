@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Circle in SVG</title>
+    <style>
+        .wrapper,
+        .container {
+            width: 1200px;
+            height: 400px;
+            margin: auto;
+        }
+
+        .wrapper {
+            background-color: #eee;
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .wrapper p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 18px;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="height: inherit;">
+        <h1>My Third SVG</h1>
+
+        <p style="text-align: left;">This is Circle in svg</p>
+    </div>
+
+
+    <!--This is circle Pattern-->
+    <div class="wrapper">
+        <svg width="100%" height="400">
+            <circle cx="0" cy="0" r="80" fill="red" stroke="black" stroke-width="3"></circle>
+
+            <circle cx="100%" cy="0" r="80" fill="red" stroke="black" stroke-width="3"></circle>
+
+            <circle cx="100%" cy="400" r="80" fill="red" stroke="black" stroke-width="3"></circle>
+
+            <circle cx="0" cy="400" r="80" fill="red" stroke="black" stroke-width="3"></circle>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga voluptates tenetur temporibus optio dolores, officia iusto laboriosam velit sapiente minus, quibusdam adipisci nulla quaerat excepturi nesciunt dolor obcaecati deserunt.
+            </p>
+
+            <rect width="400" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+</body>
+
+</html>
