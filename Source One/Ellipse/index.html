@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ellipse</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <svg width="400" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <ellipse cx="200" cy="80" rx="100" ry="50" fill="yellow" stroke="purple" ; stroke-width:2></ellipse>
+
+            <rect width="400" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <svg width="400" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <ellipse cx="200" cy="200" rx="50" ry="85" fill="none" stroke="purple" ; stroke-width:2></ellipse>
+
+            <ellipse class="second" cx="200" cy="200" rx="50" ry="85" fill="none" stroke="purple" ; stroke-width:2></ellipse>
+
+            <rect width="400" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container2">
+        <svg width="530" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <svg height="400" width="530">
+                <ellipse cx="250" cy="230" rx="220" ry="30" style="fill:purple" />
+                <ellipse cx="250" cy="210" rx="190" ry="20" style="fill:lime" />
+                <ellipse cx="250" cy="190" rx="170" ry="15" style="fill:yellow" />
+            </svg>
+
+            <rect width="530" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container2">
+        <svg width="530" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <svg height="100" width="500">
+                <ellipse cx="240" cy="50" rx="220" ry="30" style="fill:yellow" />
+                <ellipse cx="240" cy="50" rx="190" ry="20" style="fill:white" />
+            </svg>
+
+            <rect width="530" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
