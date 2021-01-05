@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e84118;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+
+.container {
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-color: #eee;
+    border: 2px solid grey;
+    margin-bottom: 25px;
+    margin: 30px;
+}
+
+.container2 {
+    width: 530px;
+    height: 400px;
+    float: left;
+    background-color: #eee;
+    border: 2px solid grey;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+.second {
+    transform: rotate(50deg);
+    transform-origin: 50% 50%;
+}
