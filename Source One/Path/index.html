@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Path</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- 
+      
+       Path commands:
+   
+       * Line Commands, Cubic Bezier Curves, Quadratic Bezier Curves, Arcs
+   
+    -->
+
+    <!--
+
+        d  = Draw,
+        M  = Move,
+        L  = Line,
+        H  = Horizontal, V = vertical, Z = End Path
+        C  = Command
+        Q  = 
+
+    -->
+
+    <div class="container">
+        <svg width="645" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <!--<path d="M80,80 L320,80 L320,240 L80,240 Z" stroke="blue" stroke-width="4" fill="none"></path>-->
+
+            <path d="M80,80 H320 V240 H80 Z" stroke="blue" stroke-width="4" fill="none"></path>
+
+            <rect width="645" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <svg width="645" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <path d="M80,50 A50,10 180 1,1 90,50" stroke="blue" stroke-width="4" fill="none"></path>
+
+            <rect width="645" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <svg width="645" height="400">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+            <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
+            <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
+            <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+            <!-- Mark relevant points -->
+            <g stroke="black" stroke-width="3" fill="black">
+                <circle id="pointA" cx="100" cy="350" r="3" />
+                <circle id="pointB" cx="250" cy="50" r="3" />
+                <circle id="pointC" cx="400" cy="350" r="3" />
+            </g>
+            <!-- Label the points -->
+            <g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+                <text x="100" y="350" dx="-30">A</text>
+                <text x="250" y="50" dy="-10">B</text>
+                <text x="400" y="350" dx="30">C</text>
+            </g>
+
+            <rect width="645" height="400" fill="url(#grid)" />
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
