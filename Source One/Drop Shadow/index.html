@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Drop shadow</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- 
+      
+       Path commands:
+   
+       * Line Commands, Cubic Bezier Curves, Quadratic Bezier Curves, Arcs
+   
+    -->
+
+    <!--
+        d  = Draw,
+        M  = Move,
+        L  = Line,
+        H  = Horizontal, V = vertical, Z = End Path
+        C  = Command
+        Q  = 
+    -->
+
+    <div class="container">
+        <svg width="645" height="398">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <svg width="645" height="400">
+                <defs>
+                    <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                    </pattern>
+                    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                        <rect width="80" height="80" fill="url(#smallGrid)" />
+                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                    </pattern>
+                </defs>
+
+                <svg height="120" width="120">
+                    <defs>
+                        <filter id="f1" x="0" y="0" width="200%" height="200%">
+                            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                            <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                        </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+
+                <rect width="645" height="400" fill="url(#grid)" />
+            </svg>
+
+
+
+            <rect width="645" height="398" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <svg width="645" height="398">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <svg width="645" height="400">
+                <defs>
+                    <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                    </pattern>
+                    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                        <rect width="80" height="80" fill="url(#smallGrid)" />
+                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                    </pattern>
+                </defs>
+
+                <svg height="140" width="140">
+                    <defs>
+                        <filter id="f2" x="0" y="0" width="200%" height="200%">
+                            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        </filter>
+                    </defs>
+                    <rect width="90" height="90" x="0" y="0" stroke="green" stroke-width="3" fill="yellow" filter="url(#f2)" />
+                </svg>
+
+                <rect width="645" height="400" fill="url(#grid)" />
+            </svg>
+
+
+
+            <rect width="645" height="398" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <svg width="645" height="398">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <svg width="645" height="400">
+                <defs>
+                    <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                    </pattern>
+                    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                        <rect width="80" height="80" fill="url(#smallGrid)" />
+                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                    </pattern>
+                </defs>
+
+                <svg height="140" width="140">
+                    <defs>
+                        <filter id="f4" x="0" y="0" width="200%" height="200%">
+                            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                            <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+                            <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+                            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        </filter>
+                    </defs>
+                    <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f4)" />
+                </svg>
+
+                <rect width="645" height="400" fill="url(#grid)" />
+            </svg>
+
+
+
+            <rect width="645" height="398" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <svg width="645" height="398">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                </pattern>
+            </defs>
+
+            <svg width="645" height="400">
+                <defs>
+                    <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5" />
+                    </pattern>
+                    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                        <rect width="80" height="80" fill="url(#smallGrid)" />
+                        <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />
+                    </pattern>
+                </defs>
+
+
+
+                <rect width="645" height="400" fill="url(#grid)" />
+            </svg>
+
+
+
+            <rect width="645" height="398" fill="url(#grid)" />
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
