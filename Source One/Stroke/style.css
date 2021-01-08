@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.container {
+    width: 48%;
+    height: 400px;
+    float: left;
+    padding: 0px;
+    background-color: #eee;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+.rectangle {
+    fill: orange;
+    stroke: crimson;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    stroke-linejoin: bevel;
+    /* Miter, Round, Bevel */
+    stroke-dasharray: 4, 1, 2, 1;
+    stroke-dashoffset: 2;
+}
+
+.line {
+    stroke: blue;
+    stroke-width: 3;
+    stroke-linecap: Square;
+    /* Butt, Round, Square */
+}
