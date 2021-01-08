@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.container {
+    width: 48%;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    /*background-color: #eee;
+border: 2px solid grey;*/
+}
+
+text {
+    font-size: 200%;
+    fill: red;
+    stroke: none;
+    font-family: impact;
+}
+
+text.two {
+    font-size: 200%;
+    fill: none;
+    stroke: blue;
+    font-family: impact;
+}
+
+.test {
+    font-size: 13px;
+}
