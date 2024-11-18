@@ -1,1 +1,16 @@
+SVG is scalable vector graphics. It is used in image, graphics. SVG can be edited in a text editor, but jpg, png images cannot be edited.
+SVG images are easy to print and zoom.
+
+It is used -
+
+* Rectangle,
+* Circle,
+* Ellipse,
+* Line,
+* Polyline,
+* Polygon,
+* Path
+
+svg, width, height, x, y, rx, ry, stroke, stroke-width, stroke-opacity, fill, fill-opacity,
+opacity.
 
