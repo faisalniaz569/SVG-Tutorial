@@ -1,0 +1,7 @@
+The <circle> element has three basic attributes to position and set the size of the circle:
+
+Attribute	Description -
+  
+r	Required. The radius of the circle
+cx	The x-axis center of the circle. Default is 0
+cy	The y-axis center of the circle. Default is 0
