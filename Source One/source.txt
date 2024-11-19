@@ -14,3 +14,21 @@ It is used -
 svg, width, height, x, y, rx, ry, stroke, stroke-width, stroke-opacity, fill, fill-opacity,
 opacity.
 
+SVG Code explanation:
+
+=> Start with the <svg> root element, define the width and height, and proper namespace
+=> The <rect> element is used to draw a rectangle
+=> The width and height of the rectangle is set to 100% of the width/height of the <svg> element
+=> Set the fill color of the rectangle to green
+=> The <circle> element is used to draw a circle
+=> The cx and cy attributes define the x and y coordinates of the center of the circle
+=> The r attribute defines the radius of the circle
+=> We set the fill color of the circle to yellow
+=> The <text> element is used to draw a text
+=> The x and y attributes define the x and y coordinates of the center of the text
+=> The font-size attribute defines the font size of the text
+=> The text-anchor attribute defines where we want the midpoint (of the text) to be
+=> The fill attribute defines the color of the text
+=> Write "SVG" as the text to show
+=> Close the SVG image with </svg>
+
